@@ -7,7 +7,7 @@ $ npm install t-minus-logger -g
 $ npm install t-minus-logger --save
 ```
 
-In Node.js:
+## Usage
 ```js
 const countdown = require('t-minus-logger')
 
@@ -17,4 +17,4 @@ countdown('Prepare for launch', 5, console.warn).then(() => {
 ```
 
 **Note:**<br>
-Please refer examples in repository for usage.
+Please refer examples in repository for more usage options and default behaviour.
