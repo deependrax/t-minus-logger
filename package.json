@@ -1,5 +1,5 @@
 {
-  "name": "t-minus",
+  "name": "t-minus-logger",
   "version": "0.1.0",
   "description": "A countdown for indicating the time remaining before a process is scheduled to start.",
   "main": "index.js",
@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deependrax/t-minus.git"
+    "url": "git+https://github.com/deependrax/t-minus-logger.git"
   },
   "keywords": [
     "launch",
     "countdown",
-    "t-minus"
+    "t-minus",
+    "t-minus-logger"
   ],
   "author": {
     "name": "Deependra Mishra",
@@ -22,7 +23,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/deependrax/t-minus/issues"
+    "url": "https://github.com/deependrax/t-minus-logger/issues"
   },
-  "homepage": "https://github.com/deependrax/t-minus#readme"
+  "homepage": "https://github.com/deependrax/t-minus-logger#readme"
 }
