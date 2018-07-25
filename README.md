@@ -11,9 +11,9 @@ In Node.js:
 ```js
 const countdown = require('t-minus-logger')
 
-countdown().then(() => {
-    console.log('Launch ->')
-})
+countdown('Prepare for launch', 5, console.warn).then(() => {
+    console.log('Launch ->');
+});
 ```
 
 **Note:**<br>
