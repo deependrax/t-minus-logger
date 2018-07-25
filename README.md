@@ -2,10 +2,9 @@
 A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.
 
 ## Installation
-Using npm:
 ```shell
-$ npm i -g t-minus-logger
-$ npm i --save t-minus-logger
+$ npm install t-minus-logger -g
+$ npm install t-minus-logger --save
 ```
 
 **Note:**<br>
