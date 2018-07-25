@@ -5,16 +5,16 @@
  * 
  * @param {string} [message=Starting] message log before starting the countdown
  * @param {number} [T=5] start countdown from T
- * @param {function} [logger=console.log] logger function
+ * 
  */
-const countdown = (message='Starting', T=5, logger=console.log) => {
+const countdown = (message='Starting', T=5) => {
   return new Promise((resolve, reject) => {
-    if(typeof message != 'string' || typeof T != 'number' || T <= 0 || typeof logger != 'function') {
+    if(typeof message != 'string' || typeof T != 'number' || T <= 0) {
         resolve()
         return
     }
 
-    logger(`${message} in ${T} secs...`)
+    console.log(`${message} in ${T} secs...`)
     let counterInterval = setInterval(function () {
       if (T === 0) {
         clearInterval(counterInterval)
@@ -22,7 +22,7 @@ const countdown = (message='Starting', T=5, logger=console.log) => {
         return
       }
 
-      logger(T--)
+      console.log(T--)
     }, 1000)
   })
 }

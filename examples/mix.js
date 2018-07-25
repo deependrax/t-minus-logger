@@ -1,5 +1,5 @@
 const countdown = require('../index')
 
-countdown('Prepare for launch', undefined, console.warn).then(() => {
+countdown(undefined, 3).then(() => {
     console.log('Launch ->');
 });
