@@ -1,6 +1,4 @@
-
-[![T-Minus](./assets/logo.png)]()
-# T-Minus Logger
+# T-Minus Logger [![T-Minus](./assets/logo.png)]()
 > A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.
 
 
@@ -9,7 +7,7 @@
 - Give time to review run params
 - Give warning & action time before starting irreversible tasks
 
-<img src="./assets/screenshot.png">
+  <img src="./assets/screenshot.png">
 
 
 ## Installation
