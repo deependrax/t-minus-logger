@@ -15,7 +15,7 @@ const countdown = (message='Launching', T=10) => {
         resolve()
         return
     }
-
+    console.log();
     let counterInterval = setInterval(function () {
       if (T === 0) {
         clearInterval(counterInterval)
