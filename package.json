@@ -1,7 +1,7 @@
 {
   "name": "t-minus-logger",
   "version": "1.0.0",
-  "description": "A countdown for indicating the time remaining before a process is scheduled to start.",
+  "description": "A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "launch",
     "countdown",
     "t-minus",
-    "t-minus-logger"
+    "t-minus-logger",
+    "logger"
   ],
   "author": {
     "name": "Deependra Mishra",
