@@ -5,11 +5,11 @@ const colors =  require('./colors')
  * 
  * **All params are optional with default values.
  * 
- * @param {string} [message=Starting] message log before starting the countdown
+ * @param {string} [message=Launching] message log before starting the countdown
  * @param {number} [T=5] start countdown from T
  * 
  */
-const countdown = (message='Starting', T=10) => {
+const countdown = (message='Launching', T=10) => {
   return new Promise((resolve, reject) => {
     if(typeof message != 'string' || typeof T != 'number' || T <= 0) {
         resolve()
