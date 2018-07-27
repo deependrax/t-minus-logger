@@ -24,7 +24,7 @@ const countdown = (message='Launching', T=10) => {
         return
       }
 
-      process.stdout.write(`\r${colors.Bright}${message} in ${colors.fg.White}${colors.bg.Red} T-${T} ${colors.Reset}`);
+      process.stdout.write(`\r ${colors.Bright}${message} in ${colors.fg.White}${colors.bg.Red} T-${T} ${colors.Reset}`);
       T--
     }, 1000)
   })

@@ -1,5 +1,13 @@
+
+[![T-Minus](./assets/logo.png)]()logger
 # T-Minus Logger
-A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.
+> A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.
+
+## Why?
+
+- Give time to review run params
+- Give warning & action time before starting irreversible tasks
+
 
 ## Installation
 ```shell
@@ -17,3 +25,7 @@ countdown('Prepare for launch', 5).then(() => {
 
 **Note:**<br>
 Please refer examples in repository for more usage options and default behaviour.
+
+## License
+
+MIT © [Deependra Mishra](https://www.linkedin.com/in/deependrax/)
