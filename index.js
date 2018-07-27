@@ -14,15 +14,16 @@ const countdown = (message='Starting', T=5) => {
         return
     }
 
-    console.log(`${message} in ${T} secs...`)
     let counterInterval = setInterval(function () {
       if (T === 0) {
         clearInterval(counterInterval)
+        console.log(`\r${message}                `);
         resolve()
         return
       }
 
-      console.log(T--)
+      process.stdout.write(`\r${message} in T-${T}`);
+      T--
     }, 1000)
   })
 }
