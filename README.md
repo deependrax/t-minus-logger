@@ -1,4 +1,4 @@
-# T-Minus Logger [![T-Minus](./assets/logo.png)]()
+# T-Minus Logger
 > A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.
 
 
