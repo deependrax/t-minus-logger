@@ -4,7 +4,7 @@
   "description": "A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/deependrax/t-minus-logger/issues"
   },
-  "homepage": "https://github.com/deependrax/t-minus-logger#readme"
+  "homepage": "https://github.com/deependrax/t-minus-logger#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
 }
