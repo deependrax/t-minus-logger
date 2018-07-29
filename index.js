@@ -1,4 +1,4 @@
-const colors = require('./colors')
+const logFormatter = require('./logFormatter')
 
 /**
  * log initial message then start with the countdown.
@@ -16,18 +16,20 @@ const countdown = (message = 'Launching', T = 10) => {
       return
     }
     console.log()
+    logFormattedCountdown(message, T--)
     let counterInterval = setInterval(function () {
       if (T === 0) {
         clearInterval(counterInterval)
-        console.log(`\r${message}\t\t`, colors.Reset)
-        resolve()
-        return
+        console.log(`\r${message}\t\t`, logFormatter.Reset)
+        return resolve()
       }
-
-      process.stdout.write(`\r ${colors.Bright}${message} in ${colors.fg.White}${colors.bg.Red} T-${T} ${colors.Reset}`)
-      T--
+      logFormattedCountdown(message, T--)
     }, 1000)
   })
+}
+
+const logFormattedCountdown = (message, T) => {
+  process.stdout.write(`\r ${logFormatter.Bright}${message} in ${logFormatter.fg.White}${logFormatter.bg.Red} T-${T} ${logFormatter.Reset}`)
 }
 
 module.exports = countdown
