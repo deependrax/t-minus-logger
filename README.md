@@ -1,7 +1,9 @@
-# T-Minus Logger [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+# T-Minus Logger [![travis][travis-image]][travis-url] [![Coverage Status][coverall-image]][coverall-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
 [travis-image]: https://travis-ci.org/deependrax/t-minus-logger.svg?branch=master
 [travis-url]: https://travis-ci.org/deependrax/t-minus-logger
+[coverall-image]: https://coveralls.io/repos/github/deependrax/t-minus-logger/badge.svg?branch=master
+[coverall-url]: https://coveralls.io/github/deependrax/t-minus-logger?branch=master
 [npm-image]: https://img.shields.io/npm/v/t-minus-logger.svg
 [npm-url]: https://npmjs.org/package/t-minus-logger
 [downloads-image]: https://img.shields.io/npm/dm/t-minus-logger.svg

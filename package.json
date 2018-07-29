@@ -4,7 +4,9 @@
   "description": "A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha --reporter spec"
+    "test": "standard && npm run unit-test",
+    "unit-test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,10 @@
     "countdown",
     "t-minus",
     "t-minus-logger",
-    "logger"
+    "logger",
+    "console",
+    "nodejs",
+    "javascript"
   ],
   "author": {
     "name": "Deependra Mishra",
@@ -29,7 +34,9 @@
   "homepage": "https://github.com/deependrax/t-minus-logger#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "standard": "^11.0.1"
   }
 }
