@@ -3,7 +3,7 @@
 const {expect, assert} = require('chai')
 const {describe, it} = require('mocha')
 const countdown = require('../index')
-const logFormatter = require('../logFormatter')
+const logFormatter = require('../log-formatter')
 
 describe('Log formatter', function () {
   it('Brighter log', function () {

@@ -1,4 +1,4 @@
-const logFormatter = require('./logFormatter')
+const logFormatter = require('./log-formatter')
 
 /**
  * log initial message then start with the countdown.
