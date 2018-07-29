@@ -9,11 +9,10 @@ const logFormatter = require('./log-formatter')
  * @param {number} [T=5] start countdown from T
  *
  */
-const countdown = (message = 'Launching', T = 10) => {
+const countdown = (message = 'Launching', T = 5) => {
   return new Promise((resolve, reject) => {
     if (typeof message !== 'string' || typeof T !== 'number' || T <= 0) {
-      resolve()
-      return
+      return resolve()
     }
     console.log()
     logFormattedCountdown(message, T--)

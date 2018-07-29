@@ -21,13 +21,29 @@ describe('Log formatter', function () {
 })
 
 describe('T-Minus logger', function () {
-  it('Countdown for 1 seconds', function () {
+  it('Countdown for 2 seconds', function () {
     const t = (new Date()).getTime()
-    const configuredTime = 1
+    const configuredTime = 2
     return countdown('', configuredTime).then(() => {
       const delay = (new Date()).getTime() - t
       assert.isAtLeast(delay, configuredTime * 1000, 'Delay should be atleast for configured time')
       assert.isAtMost(delay, configuredTime * 1000 + 100, 'Delay should be at most 100ms more than configured time')
+    })
+  }).timeout(3000)
+  it('Default countdown', function () {
+    const t = (new Date()).getTime()
+    const defaultTime = 5
+    return countdown().then(() => {
+      const delay = (new Date()).getTime() - t
+      assert.isAtLeast(delay, defaultTime * 1000, 'Delay should be atleast for configured time')
+      assert.isAtMost(delay, defaultTime * 1000 + 100, 'Delay should be at most 200ms more than configured time')
+    })
+  }).timeout(6000)
+  it('No Countdown', function () {
+    const t = (new Date()).getTime()
+    return countdown('', 0).then(() => {
+      const delay = (new Date()).getTime() - t
+      assert.isAtMost(delay, 100, 'If no countdown delay should be at most 100ms')
     })
   })
 })
