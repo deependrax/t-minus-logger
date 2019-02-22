@@ -42,7 +42,7 @@ countdown('Prepare for launch', 5).then(() => {
 Please refer examples in repository for more usage options and default behaviour.
 
 ## Sponsored By
-<a href="http://www.shopinfer.com" target="_blank"><img src="http://www.shopinfer.com/assets/img/branding/shopinfer.png"></a>
+<a href="http://www.shopinfer.com" target="_blank"><img src="http://www.shopinfer.com/assets/img/branding/shopinfer.png" alt="Shopinfer - Best Product Comparison site online" width="200"></a>
 
 ## License
 
