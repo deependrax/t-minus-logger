@@ -21,7 +21,7 @@
 - Give time to review run params
 - Give warning & action time before starting irreversible tasks
 
-  <img src="./assets/screenshot.png">
+  <img src="./src/assets/screenshot.png">
 
 
 ## Installation

@@ -2,7 +2,7 @@
   "name": "t-minus-logger",
   "version": "1.1.1",
   "description": "A T-Minus countdown logger for indicating the time remaining before a process is scheduled to start.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "standard && npm run unit-test",
     "unit-test": "nyc --reporter=html --reporter=text mocha",
