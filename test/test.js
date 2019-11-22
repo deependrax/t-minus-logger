@@ -7,16 +7,16 @@ const logFormatter = require('../log-formatter')
 
 describe('Log formatter', function () {
   it('Brighter log', function () {
-    expect(logFormatter.Bright).to.equal('\x1b[1m')
+    expect(logFormatter.bright).to.equal('\x1b[1m')
   })
   it('Red background', function () {
-    expect(logFormatter.bg.Red).to.equal('\x1b[41m')
+    expect(logFormatter.bg.red).to.equal('\x1b[41m')
   })
   it('White font color', function () {
-    expect(logFormatter.fg.White).to.equal('\x1b[37m')
+    expect(logFormatter.fg.white).to.equal('\x1b[37m')
   })
   it('Reset Formatter', function () {
-    expect(logFormatter.Reset).to.equal('\x1b[0m')
+    expect(logFormatter.reset).to.equal('\x1b[0m')
   })
 })
 

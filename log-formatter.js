@@ -1,11 +1,11 @@
 const logFormatter = {
-  Reset: '\x1b[0m',
-  Bright: '\x1b[1m',
+  reset: '\x1b[0m',
+  bright: '\x1b[1m',
   fg: {
-    White: '\x1b[37m'
+    white: '\x1b[37m'
   },
   bg: {
-    Red: '\x1b[41m'
+    red: '\x1b[41m'
   }
 }
 
