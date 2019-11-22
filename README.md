@@ -1,4 +1,5 @@
-# T-Minus Logger [![travis][travis-image]][travis-url] [![CodeFactor][codefactor-image]][codefactor-url] [![Coverage Status][coverall-image]][coverall-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+## T-Minus Logger
+# [![travis][travis-image]][travis-url] [![CodeFactor][codefactor-image]][codefactor-url] [![Coverage Status][coverall-image]][coverall-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
 [travis-image]: https://travis-ci.org/deependrax/t-minus-logger.svg?branch=master
 [travis-url]: https://travis-ci.org/deependrax/t-minus-logger
