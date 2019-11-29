@@ -11,21 +11,30 @@ const logFormatter = require('./log-formatter')
  */
 module.exports = (message = 'Launching', T = 5) => {
   return new Promise((resolve, reject) => {
-    if (typeof message !== 'string' || typeof T !== 'number' || T <= 0) {
+    if (typeof message !== 'string' || typeof T !== 'number' || T < 0) {
       console.error(`${logFormatter.fg.white}${logFormatter.bg.red} Countdown Error ${logFormatter.reset}`)
       return reject(new Error('Countdown Error, please refer documentation for valid message & initial counter (T) values'))
     }
 
+    if (T === 0) {
+      logMessage(message)
+      return resolve()
+    }
+
     logFormattedCountdown(message, T--)
     let counterInterval = setInterval(function () {
-      if (T === 0) {
+      if (T <= 0) {
         clearInterval(counterInterval)
-        console.log(`\r${message}\t\t`)
+        logMessage(message)
         return resolve()
       }
       logFormattedCountdown(message, T--)
     }, 1000)
   })
+}
+
+const logMessage = message => {
+  console.log(`\r${message}\t\t`)
 }
 
 const logFormattedCountdown = (message, T) => {
