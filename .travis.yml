@@ -1,3 +1,4 @@
+dist: trusty
 language: node_js
 
 node_js:
@@ -6,8 +7,16 @@ node_js:
 install:
   - npm install
 
+addons:
+  sonarcloud:
+    organization: "deependrax-github"
+    token:
+      secure: "Aq23zwPKBqtgXRXRv1s3hJc5UsTbajf+HN7S9GfyZo41XyCFsUlhtlE6w4CEoAj5EPdLcaUBM52DEQ2n0UKGiBUVaaMiDLDRJJGLsGlX6X4Tn6Aa35G0vumWK40Bt+grYcxWtyBUtm/kj5vrxGb6/rcBore2ch8W1qTikb5PNLtwRZkNkM5f8mfRXc2aM8KF6R7AAOrK7quoK15psZ5tsgwXEHQuWwmtOXdyBxHpjjN/HpZ0rg72XO3gifKWOq68vO7xjxGErsL2Uvjvrr+/eA68ytaiGLXMKRDL8NdKUWsnPEGkCe3raKyALDr8MnF2EtukZW6roghv7h1fcL9xycQPz1nsoqPt2UvSo+nTsj9qFea3NAZx6wC9FzKhfwiSXmSAE392vXdl87A1hT2MUivOsnPk3y/TRzvt7UBzw88S61/bvV3sYbuQhtjSiMs9zJ282BAg/XmGLNKJNRvqyQidRPTKlRIlWsnHOaW6MZhlZmLPO+wkFDIVp1kc2VI9VqcXl5xasJuzOEMTMpIhU+6JpYmyC01TG4egXOaR/oTwT6TQettG+OtPiEa7vCQvGJ0S4mJzABsJj+iFdK0QNsomAB+INn+oRN6/QfHlCWK13o+UIk7O3Z8/Y/zL88YOpYyBjAzv9p5qIs89hNF3bsHKQB0fTMxKduQTUFTEt3c="
+      
 script:
   - npm test
+  - sonar-scanner
+  
 
 # Send coverage data to Coveralls
 after_success: npm run coverage
