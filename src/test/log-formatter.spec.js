@@ -1,7 +1,7 @@
 'use strict'
 
-const {expect} = require('chai')
-const {describe, it} = require('mocha')
+const { expect } = require('chai')
+const { describe, it } = require('mocha')
 const logFormatter = require('../log-formatter')
 
 describe('Log formatter', function () {

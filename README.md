@@ -1,4 +1,5 @@
 ## T-Minus Logger <img src="./src/assets/logo.png">
+
 [![travis][travis-image]][travis-url] [![CodeFactor][codefactor-image]][codefactor-url] [![Coverage Status][coverall-image]][coverall-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
 [travis-image]: https://travis-ci.org/deependrax/t-minus-logger.svg?branch=master
@@ -23,28 +24,26 @@
 
   <img src="./src/assets/screenshot.png">
 
-
 ## Installation
+
 ```shell
 $ npm i t-minus-logger
 ```
 
-
 ## Usage
-```js
-const countdown = require('t-minus-logger')
 
-countdown('Prepare for launch', 5).then(() => {
-    console.log('Launch ->');
+```js
+const countdown = require("t-minus-logger");
+
+countdown("Prepare for launch", 5).then(() => {
+  console.log("Launch ->");
 });
 ```
 
 **Note:**<br>
-- Please refer examples in repository for more usage options and default behaviour.
-- Exclude in dev mode by conditionally passing start time T = 0
 
-## Sponsored By
-<a href="http://www.shopinfer.com" target="_blank"><img src="http://www.shopinfer.com/assets/img/branding/shopinfer.png" alt="Shopinfer - Best Product Comparison site online" width="200"></a>
+- Please refer to examples in the repository for more usage options and default behavior.
+- Exclude in dev mode by conditionally passing start time T = 0
 
 ## License
 

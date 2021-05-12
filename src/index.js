@@ -22,7 +22,7 @@ module.exports = (message = 'Launching', T = 5) => {
     }
 
     logFormattedCountdown(message, T--)
-    let counterInterval = setInterval(function () {
+    const counterInterval = setInterval(function () {
       if (T <= 0) {
         clearInterval(counterInterval)
         logMessage(message)
